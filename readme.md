@@ -1,7 +1,6 @@
-# MERN Authentication Starter
+# MERN ACE
 
-This is a starter app for a MERN stack application with authentication. This is for a SPA (Single Page Application) workflow that uses the [Vite](https://vite.dev) Build tool.
-<img src="./frontend/public/screen.png" />
+This is a re-vamp of my project ACE. This is for a SPA (Single Page Application) workflow that uses the [Vite](https://vite.dev) Build tool.
 
 It includes the following:
 
@@ -14,27 +13,24 @@ It includes the following:
 - React frontend to register, login, logout, view profile, and update profile
 - React Bootstrap UI library
 - React Toastify notifications
+- & additions from the ACE project
 
 ## Usage
 
 - Create a MongoDB database and obtain your `MongoDB URI` - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
-- Create a PayPal account and obtain your `Client ID` - [PayPal Developer](https://developer.paypal.com/)
 
 ### Env Variables
 
-Rename the `.env.example` file to `.env` and add the following
+`.env` file config:
 
 ```
 NODE_ENV = development
 PORT = 5000
 MONGO_URI = your mongodb uri
-JWT_SECRET = 'abc123'
+JWT_SECRET = 'abc123' (customizable)
 ```
 
-Change the JWT_SECRET to what you want
-
 ### Install Dependencies (frontend & backend)
-
 ```
 npm install
 cd frontend
@@ -42,9 +38,7 @@ npm install
 ```
 
 ### Run
-
 ```
-
 # Run frontend (:3000) & backend (:5000)
 npm run dev
 
@@ -53,7 +47,6 @@ npm run server
 ```
 
 ## Build & Deploy
-
 ```
 # Create frontend prod build
 cd frontend
